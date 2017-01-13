@@ -37,7 +37,7 @@ function sendMessage() {
     var chat = document.querySelector(".chat");
     chat.appendChild(messageElement);
     chat.appendChild(renMessageElement);
-    chat.scrollTo(0, chat.scrollHeight);
+    chat.scrollTop = chat.scrollHeight;
     input.value = "";
 
 }
